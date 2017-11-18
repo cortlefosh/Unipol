@@ -1,11 +1,11 @@
-<!DOCTYPE html>
 <?php 
-	session_start(); 
+	session_start();
 	if (isset($_POST["name"])) {
 		$_SESSION["name"] = $_POST["name"];
 		$username = $_POST["name"];
 	}
 ?>
+<!DOCTYPE html>
 <html>
 <head>
 	<?php //require templates\head.php; ?>

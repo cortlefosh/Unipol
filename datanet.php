@@ -1,8 +1,12 @@
+<?php
+	session_start();
+	if (!isset($_SESSION["name"])) {header("Location: index.php"); die();}
+	$username = $_SESSION["name"];
+?>
 <!DOCTYPE html>
-<?php 
+<?php
 	$mysqli = new mysqli('localhost', 'root');
 	if (!$mysqli) {die('Could not connect to mySQL: ' . mysql_error());}
-	echo '<p>Connection to mySQL successful.</p>';
 	if ($mysqli->query("CREATE DATABASE datanet") === TRUE) {echo '<p>Database "datanet" successfully created.</p>';}
 	$mysqli->select_db("Datanet");
 	$query = "CREATE TABLE `datanet`.`Elements` (`ID` INT PRIMARY KEY, `DOCNAME` VARCHAR(20))";
@@ -18,6 +22,7 @@
 	<title>UNIPOL Datanet</title>
 </head>
 <body>
+	<p>Logged in as <?php echo $username; ?>.</p>
 	<h1 id="datanetTitle">The UNIPOL Datanet</h1>
 <?php 
 	$result = $mysqli->query("SELECT * FROM Elements");
