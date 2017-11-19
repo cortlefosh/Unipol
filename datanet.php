@@ -22,7 +22,7 @@
 	<title>UNIPOL Datanet</title>
 </head>
 <body>
-	<p id='loggedIn'>Logged in as <?php echo $username; ?>.</p>
+	<span id='loggedIn'><p>Logged in as <?php echo $username; ?>. <a href="logout.php">Log out</a></p></span>
 	<h1 id="datanetTitle">The UNIPOL Datanet</h1>
 <?php 
 	$result = $mysqli->query("SELECT * FROM Elements");
