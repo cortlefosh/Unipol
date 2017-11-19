@@ -10,11 +10,9 @@
 <head>
 	<?php //require templates\head.php; ?>
 	<title>Welcome to Unipol!</title>
-	<link type="text/css" rel="stylesheet" href="css/index.css">
-	<script src="js/index.js"></script>
 </head>
 <body>
-	<?php //require templates\background.php; ?>
+	<?php //require templates\background.php;?>
 	<h1 id="welcomeMessage">Welcome to Unipol<?php
 		if (isset($username)) {echo ", " . $username;}
 	?>!</h1>

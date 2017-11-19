@@ -22,13 +22,13 @@
 	<title>UNIPOL Datanet</title>
 </head>
 <body>
-	<p>Logged in as <?php echo $username; ?>.</p>
+	<p id='loggedIn'>Logged in as <?php echo $username; ?>.</p>
 	<h1 id="datanetTitle">The UNIPOL Datanet</h1>
 <?php 
 	$result = $mysqli->query("SELECT * FROM Elements");
 	while ($resultAr = mysqli_fetch_assoc($result)) {
-		echo "<h2>ID: ".$resultAr["ID"]."</h2>"; 
-		echo "<p>Name: ".$resultAr["DOCNAME"]."</p>";
+		echo "<div class='element'><h2>ID: ".$resultAr["ID"]."</h2>"; 
+		echo "<p>Name: ".$resultAr["DOCNAME"]."</p></div>";
 	}
 ?>
 </body>

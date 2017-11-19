@@ -1,0 +1,17 @@
+body {
+	background: #69d;
+	font-family: Trebuchet MS, sans-serif;
+	color: white;
+	margin: 0px;
+	padding: 2px 12px;
+}
+
+.element {
+	border-top: 2px dotted black;
+	
+}
+
+#loggedIn {
+	float: right;
+	margin-top: 2px;
+}
