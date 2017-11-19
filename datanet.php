@@ -18,11 +18,12 @@
 	?>
 <html>
 <head>
-	<?php include "templates\head.php"; ?>
+	<?php require "templates\head.php"; ?>
 	<title>UNIPOL Datanet</title>
 </head>
 <body>
 	<span id='loggedIn'><p>Logged in as <?php echo $username; ?>. <a href="logout.php">Log out</a></p></span>
+	<img id="logo" src="img/logo.jfif">
 	<h1 id="datanetTitle">The UNIPOL Datanet</h1>
 <?php 
 	$result = $mysqli->query("SELECT * FROM Elements");

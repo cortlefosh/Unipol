@@ -15,3 +15,10 @@ body {
 	float: right;
 	margin-top: 2px;
 }
+
+#logo {
+	position: fixed;
+	bottom: 12px;
+	left: 12px;
+	height: 100px;
+}

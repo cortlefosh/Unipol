@@ -8,11 +8,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<?php //require templates\head.php; ?>
+	<?php require "templates\head.php"; ?>
 	<title>Welcome to Unipol!</title>
 </head>
 <body>
-	<?php //require templates\background.php;?>
+	<?php //require "templates\background.php";?>
+	<img id="logo" src="img/logo.jfif">
 	<h1 id="welcomeMessage">Welcome to Unipol<?php
 		if (isset($username)) {echo ", " . $username;}
 	?>!</h1>
