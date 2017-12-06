@@ -8,27 +8,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<?php require "templates\head.php"; ?>
-	<title>Welcome to Unipol!</title>
+	<?php require "templates/head.php"; ?>
+	<title>Unipol</title>
+	<link rel="stylesheet" href="css/index_style.css">
 </head>
 <body>
-	<?php //require "templates\background.php";?>
-	<img id="logo" src="img/logo.jfif">
-	<h1 id="welcomeMessage">Welcome to Unipol<?php
-		if (isset($username)) {echo ", " . $username;}
-	?>!</h1>
-	<p id="unipolDesc">Unipol is ipsum lorem dolor</p>
-	<?php if (!isset($username)) { echo
-	"<form id='nameInput' action='index.php' method='post'>
-		<p>Enter your name here to access the Unipol datanet!</p>
-		<input type='text' name='name' value='Enter Name'>
-		<input type='submit' name='submit' value='Submit'>
-	</form>";
-	} else { echo
-	"<form id='accessUnipol' action='datanet.php' method='post'>
-		<p>Click here to access the Unipol datanet!</p>
-		<input type='submit' value='Access datanet'>
-	</form>";
-	} ?>
+	<header>
+		<p id="wel_headertext">Founded 28th Feb 2017</p>
+	</header>
+	
+	<section>
+		<img src="img/index_images/wel_logo.png" alt="UNIPOL logo blue" id="wel_logo">
+		<img src="img/index_images/wel_deftext.png" alt="" id="wel_deftext">
+		<img src="img/index_images/wel_label.png" alt="UNIPOL" id="wel_label">
+		<img src="img/index_images/wel_subtitle.png" alt="UNITED POLITICS" id="wel_subtitle">
+		
+		<a href="datanet.php" id="wel_loginbutton">Login</a>
+	</section>	
+	
+	<footer>
+	  <p id="wel_footertext">This webpage is a work in progress and currently managed privately by H.F.S. Wetton, M.S. Tanner and G.J. König.</p>
+	</footer>
 </body>
 </html>

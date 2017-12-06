@@ -1,6 +1,11 @@
+@font-face {
+  font-family: 'Stellar';
+  src: url('ext/Stellar-Regular.otf');
+}
+
 body {
 	background: #69d;
-	font-family: Trebuchet MS, sans-serif;
+	font-family: 'Stellar', sans-serif;
 	color: white;
 	margin: 0px;
 	padding: 2px 12px;
