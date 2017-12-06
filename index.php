@@ -25,10 +25,10 @@
 		<input type='submit' name='submit' value='Submit'>
 	</form>";
 	} else { echo
-	'<form id="accessUnipol" action="datanet.php" method="post">
+	"<form id='accessUnipol' action='datanet.php' method='post'>
 		<p>Click here to access the Unipol datanet!</p>
-		<input type="submit" value="Access datanet">
-	</form>';
+		<input type='submit' value='Access datanet'>
+	</form>";
 	} ?>
 </body>
 </html>
