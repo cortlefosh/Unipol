@@ -1,20 +1,22 @@
 @charset "UTF-8";
-@font-face {
-  font-family: 'Stellar';
-  src: url('ext/Stellar-Regular.otf');
-}
+@import url("https://use.typekit.net/beg6jky.css");
 /* CSS Document */
 
 /*structure*/
+@media (min-width: 1300px) {
+	body {
+		background-image: url(/img/index_images/Globe.gif);
+		background-size: fill;
+		background-repeat: no-repeat;
+	}
+}
 
 body {
 	color: white;
-	background-image: url(/img/index_images/wel_background.png);
-	background-size: cover;
 	background-color: #52658F;
-	background-repeat: no-repeat;
-	background-attachment: absolute;
-	font-family: 'Stellar', sans-serif;
+	font-family: futura-pt-condensed, sans-serif;
+	font-style: normal;
+	font-weight: 500;
 }
 
 .welText {
@@ -26,7 +28,6 @@ header {
 	position: absolute;
 		left: 0%;
 		top: 0%;
-		height: auto;
 		width: 100%;
 	background-color: #333A56;
 }
@@ -49,22 +50,25 @@ footer {
 		width: 12%;
 		height: auto;
 }
+#welLabel {
+	position: absolute;
+	right: 10%;
+	top: 20%;
+	font-size: 4vw;
+	padding: 0px;
+}
 #welDeftext {
 	position: absolute;
 	right: 10%;
 	top: 40%;
 	text-align: right;
-}
-#welLabel {
-	position: absolute;
-	right: 10%;
-	top: 25%;
-	font-size: 400%;
+	font-size: 1vw;
 }
 #welSubtitle {
 	position: absolute;
 		right: 10%;
-		top: 36%;
+		top: 34%;
+	font-size: 1.5vw;
 }
 
 #welHeadertext {
@@ -88,30 +92,36 @@ footer {
 #welLoginForm {
 	position: absolute;
 	right: 10%;
-	top: 63%;
+	top: 50%;
 	color: #E8E8E8;
 }
 
-input[type="text"] {
-	border: 333a56 medium;
+input[type="text"],[type="password"] {
+	border: 1px solid #333a56;
 }
 
 input[placeholder] {
 	margin: 2px;
 	padding: 10px;
 	color: #333a56;
-	font-family: 'Stellar', sans-serif;
+	font-family: futura-pt-condensed, sans-serif;
+	font-style: normal;
+	font-weight: 500;
 	text-align: right;
+	width: 170px
 }
 	
 input[type="submit"] {
-	background: none;
-	border: none;
+	background: #333a56;
+	border: 2px solid #333a56;
 	position: absolute;
-	margin: 4% 0%;
+	margin: 4% 4%;
+	padding-right: 3px;
 	right: 0%;
-	color: #333a56;
-	font-family: 'Stellar', sans-serif;
-	font-size: 15px;
-	letter-spacing: 2px;
+	color: #E8E8E8;
+	font-family: futura-pt-condensed, sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 1vw;
+	letter-spacing: 3px;
 }

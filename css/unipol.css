@@ -1,11 +1,8 @@
-@font-face {
-  font-family: 'Stellar';
-  src: url('ext/Stellar-Regular.otf');
-}
+@import url('https://fonts.googleapis.com/css?family=Oswald');
 
 body {
 	background: #69d;
-	font-family: 'Stellar', sans-serif;
+	font-family: 'Oswald', sans-serif;
 	color: white;
 	margin: 0px;
 	padding: 2px 12px;
@@ -19,11 +16,4 @@ body {
 #loggedIn {
 	float: right;
 	margin-top: 2px;
-}
-
-#logo {
-	position: fixed;
-	bottom: 12px;
-	left: 12px;
-	height: 100px;
 }

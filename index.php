@@ -1,9 +1,5 @@
 <?php 
 	session_start();
-	if (isset($_POST["name"])) {
-		$_SESSION["name"] = $_POST["name"];
-		$username = $_POST["name"];
-	}
 ?>
 <!DOCTYPE html>
 <html><head>
@@ -20,12 +16,12 @@
 	<h3 class="welText" id="welSubtitle">United Politics</h3>		
 	<img src="img/index_images/wel_logo.png" alt="UNIPOL logo blue" id="welLogo">
 	<h1 class="welText" id="welLabel">Unipol</h1>
-	<h2 class="welText" id="welDeftext">Decentralised Concensus Network for Collective Analysis in Deductive Research</h2>
+	<h2 class="welText" id="welDeftext">Decentralised Concensus Network<br>for Collective Analysis<br>in Deductive Research</h2>
 		
-	<form id="welLoginForm" action="datanet.php" method="post" target="_self">
+	<form id="welLoginForm" action="login.php" method="post" target="_self">
 	  	<input type="text" name="username" placeholder="Username"><br>
 		<input type="password" name="password" placeholder="Password"><br>
-	  	<input type="submit" href="datanet.php" class="welText" id="welLoginbutton" value="Login">
+	  	<input type="submit" class="welText" id="welLoginbutton" value="Login">
 	</form>
 	
 	<footer>
